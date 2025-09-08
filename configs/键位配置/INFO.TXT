@@ -1,0 +1,5 @@
+Bootloader Version: 2.0
+Model: WOODS40_BASE
+Firmware Version: LC1.5
+Board-ID: A4CE1A59757B2D5F
+SoftDevice: S140 version 7.2.0
