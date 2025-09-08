@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WOODSKB客制化键盘</title>
+
+  <!--
+  <link href="/css/main.css" rel="stylesheet">-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#lefttoc" data-offset="120">
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="https://woodskb.com/"><img src="../img/woodskbkb-pure.svg" style="height:20px;"/></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">使用帮助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/fw/">固件下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/config/">键盘配置</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Page Content -->
+  <div class="container mt-4" id="content">
+    <div class="row">
+    
+      <div class="col-lg-3 mb-4 sidenav">
+
+      <div class="wy-menu shadow" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="list-group" id="lefttoc">
+			
+			
+				
+    <a class="list-group-item" href="index.html">目录</a>
+			
+				
+    <a class="list-group-item" href="assmb.html">组装</a>
+			
+				
+    <a class="list-group-item font-weight-bold active" href="keymap.html" data-target="#content">键位设置</a>
+    <!--ul class="subnav"<nav class="list-group">-->
+			
+				<a class="list-group-item list-group-item-action pl-4" href="keymap.html#1_dfu">1. 进DFU</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="keymap.html#2">2. 配置键位</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="keymap.html#3">3. 更新键盘配置文件</a>
+				
+			
+    <!--</nav>/ul-->
+			
+				
+    <a class="list-group-item" href="bt.html">蓝牙</a>
+			
+				
+    <a class="list-group-item" href="power.html">电源及休眠</a>
+			
+				
+    <a class="list-group-item" href="macro.html">配置宏</a>
+			
+				
+    <a class="list-group-item" href="fw.html">固件升级</a>
+			
+				
+    <a class="list-group-item" href="faq.html">常见问题</a>
+			
+        </div>
+      </div>
+      &nbsp;
+      </div>
+
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4 content">
+    <p><span style="font-size:2rem;">键位设置</span></p>
+<p>WOODSKB系列键盘升级固件和设置键位无需安装任何软件，采用的是网站+仿真U盘方式。基本步骤是：</p>
+<ol>
+<li>进入DFU，键盘将被识别为U盘</li>
+<li>浏览器访问<a href="https://woodskb.com/config/">键盘配置</a>，配置键位</li>
+<li>下载并更新键盘的配置文件</li>
+</ol>
+<h2 id="1_dfu">1. 进DFU</h2>
+<p>有两种方法可以进入DFU。</p>
+<ul>
+<li>
+<p>方法一：</p>
+<ol>
+<li>关闭电池开关。<ul>
+<li>WOODS40系列开关在电路板的<strong>上边缘</strong>，O、P键之间。可以用附送的SIM卡顶针拨动。拨动到<strong>左</strong>侧是关闭。</li>
+<li>WOODS60系列有两个可选的开关位置，参见<a href="assmb.html#21">“组装”中的介绍</a>，拨动到<strong>下</strong>是关闭</li>
+</ul>
+</li>
+<li>按住角上的键，插上USB线，这个键是：<ul>
+<li>对于WOODS40系列，是Backspace键</li>
+<li>对于WOODS60系列，是Esc键</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>方法二：</p>
+<ol>
+<li>
+<p>提前分配好DFU按键。在键位设置界面中，DFU键在“键盘设置”页中。如下图：
+<a href="img/dfukey.png" target="_wikiimg"><img src="img/dfukey.png" alt="平衡杆" style="max-width:650px;" /></a></p>
+</li>
+<li>
+<p>插上USB数据线，按下所设置的DFU按键</p>
+</li>
+</ol>
+<p>如果没有插USB线，按DFU键不会有任何作用。</p>
+</li>
+</ul>
+<p>此时键盘将会被识别为U盘。并且左上角的灯会亮起。</p>
+<p>DFU没有退出键，拷入配置文件或固件文件后自动退出并重启键盘。否则可以拔插数据线强制退出（在电池开关关闭的情况下）。</p>
+<h2 id="2">2. 配置键位</h2>
+<p>本站提供了图形化键位配置工具，用浏览器访问<a href="https://woodskb.com/config/">键盘配置</a>，配置键位。</p>
+<p>进DFU键盘被识别为U盘后，打开这个U盘，可以看到有一个<code>CONFIG.HTM</code>文件，双击这个文件，就可以访问配置网站，并<strong>自动提交</strong>键盘的当前键位配置，方便在已保存的键位配置的基础上修改。</p>
+<p>可点击配置界面右上的“加载默认键位”按钮，加载默认的配置。这套默认配置有相对完善的分层和功能键设计，是一套比较实用的键位设置。您可以在此配置的基础上修改。</p>
+<h2 id="3">3. 更新键盘配置文件</h2>
+<p>设置完键位后，点击界面上的“下载配置文件”按钮，会下载一个名为<code>KBCFGNEW.UF2</code>的文件，将这个文件拷贝到第1步中挂载的U盘中即可。</p>
+<p>在一些情况下您下载下来的文件名可能不是<code>KBCFGNEW.UF2</code>，比如目录中已有这个文件，则新生成的文件名会有后缀。<strong>不用在意</strong>文件名，直接拷贝就好。</p>
+<p>拷贝完成后键盘将立即重启。现在键位已经更新了，试试新的配置吧~</p>
+      </div>
+      <a href="javascript:;" id="s2tbox" onclick="return false;" > </a>
+    </div>
+  
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark mt-4">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; woodskb.com 2020　京ICP备20021896号</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(function(){ 
+  $(".content table").addClass("table table-striped");
+  $("tr td:first-child").addClass("text-nowrap");  
+	if( $("s2tbox").length == 0) {
+		//$(document.body).append('<a href="javascript:;" id="s2tbox" onclick="return false;" > </a>');
+	}
+	$(document).scroll(function(){
+		if($(document).scrollTop()>300){
+			$("#s2tbox").css("display","block");
+		}else{
+			$("#s2tbox").css("display","none");
+		}
+	});
+	$("#s2tbox").click( function(){ $("html,body").animate({scrollTop:0},300); } );
+  });
+  </script>
+</body>
+
+</html>

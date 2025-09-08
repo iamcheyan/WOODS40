@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WOODSKB客制化键盘</title>
+
+  <!--
+  <link href="/css/main.css" rel="stylesheet">-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#lefttoc" data-offset="120">
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="https://woodskb.com/"><img src="../img/woodskbkb-pure.svg" style="height:20px;"/></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">使用帮助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/fw/">固件下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/config/">键盘配置</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Page Content -->
+  <div class="container mt-4" id="content">
+    <div class="row">
+    
+      <div class="col-lg-3 mb-4 sidenav">
+
+      <div class="wy-menu shadow" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="list-group" id="lefttoc">
+			
+			
+				
+    <a class="list-group-item" href="index.html">目录</a>
+			
+				
+    <a class="list-group-item" href="assmb.html">组装</a>
+			
+				
+    <a class="list-group-item" href="keymap.html">键位设置</a>
+			
+				
+    <a class="list-group-item" href="bt.html">蓝牙</a>
+			
+				
+    <a class="list-group-item" href="power.html">电源及休眠</a>
+			
+				
+    <a class="list-group-item" href="macro.html">配置宏</a>
+			
+				
+    <a class="list-group-item" href="fw.html">固件升级</a>
+			
+				
+    <a class="list-group-item font-weight-bold active" href="faq.html" data-target="#content">常见问题</a>
+    <!--ul class="subnav"<nav class="list-group">-->
+			
+    <!--</nav>/ul-->
+			
+        </div>
+      </div>
+      &nbsp;
+      </div>
+
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4 content">
+    <p><span style="font-size:2rem;">常见问题</span></p>
+<h4>Q：如何打出键盘上没有的键？比如40键盘上怎么打数字？</h4>
+<p>A：键位有“分层”的概念，把键盘上没有的按键放在其它层，然后通过切层键切到别的层。比如在WOODS40系列键盘中，数字键在1层上，默认的切到1层的键是右空格，用的TT切层键。所以在默认配置下，按住右空格再按Q键，就能输入数字1；或者双击右空格，就固定在1层，可以连续输入数字，再双击返回默认层。</p>
+<p>&nbsp;</p>
+<h4>Q：如何切层？</h4>
+<p>A：需要为按键分配切层键来切层。在<a href="keymap.html">键位设置</a>一节中，介绍了设置键位的基本方法。在键位设置界面中，切层相关的键在“扩展”页中的“层切换”部分。</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MO</td>
+<td>瞬时切换到层：按下时打开层，抬起时返回</td>
+</tr>
+<tr>
+<td>TG</td>
+<td>层在打开、关闭状态间切换</td>
+</tr>
+<tr>
+<td>TO</td>
+<td>点按后打开层</td>
+</tr>
+<tr>
+<td>TT</td>
+<td>通常，它的行为类似于MO：按下时打开层，抬起时返回；如果双击，就持续打开层，再双击返回默认层</td>
+</tr>
+<tr>
+<td>DF</td>
+<td>设置默认层</td>
+</tr>
+<tr>
+<td>OSL</td>
+<td>切换到层，按一个键后返回默认层</td>
+</tr>
+<tr>
+<td>LT</td>
+<td>点按是设定的键, 按住超过200ms则切换到层</td>
+</tr>
+</tbody>
+</table>
+<p>切层键分配到某个键上后，还要在键中间的方框内输入数字，这个数字就是要切到的目标层层号。比如 <img src="img/mo5.png" alt="mo切层" style="width:42px;display: inline-block;" /> ，就是瞬时切到5层。</p>
+<p>LT切层是组合键切层，分配到某个键上后，还要在键中间的方框内设定一个键，点按就是输出这个键，按住超过200ms则切换到层。比如 <img src="img/lt.png" alt="lt切层" style="width:42px;display: inline-block;" /> ，正常点按是输出Esc键，按住就是切到4层。</p>
+<p>&nbsp;
+注意：请将目标层上的对应键设为穿透键▽，否则可能锁定层。比如，将A键设为MO(2)，则在2层上，要将A键设为穿透键▽。在键位设置界面中，穿透键▽在“扩展”页中的“特殊”部分。</p>
+<p>&nbsp;</p>
+<h4>Q：矮轴键盘可以用什么键帽？</h4>
+<p>A：对于常见的键帽规格可参考下表：</p>
+<table>
+<thead>
+<tr>
+<th>键帽规格</th>
+<th>可用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DSA</td>
+<td>是</td>
+</tr>
+<tr>
+<td>XDA</td>
+<td>是</td>
+</tr>
+<tr>
+<td>原厂</td>
+<td>不推荐。不能完全安装到底，对手感有一定影响</td>
+</tr>
+<tr>
+<td>OEM</td>
+<td>不推荐。不能完全安装到底，对手感有一定影响。但壁厚1.2mm以下的基本无影响。</td>
+</tr>
+<tr>
+<td>VSA</td>
+<td>是</td>
+</tr>
+<tr>
+<td>SA</td>
+<td>是</td>
+</tr>
+<tr>
+<td>太豪</td>
+<td>是</td>
+</tr>
+<tr>
+<td>MDA</td>
+<td>是</td>
+</tr>
+<tr>
+<td>MT3</td>
+<td>是</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <a href="javascript:;" id="s2tbox" onclick="return false;" > </a>
+    </div>
+  
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark mt-4">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; woodskb.com 2020　京ICP备20021896号</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(function(){ 
+  $(".content table").addClass("table table-striped");
+  $("tr td:first-child").addClass("text-nowrap");  
+	if( $("s2tbox").length == 0) {
+		//$(document.body).append('<a href="javascript:;" id="s2tbox" onclick="return false;" > </a>');
+	}
+	$(document).scroll(function(){
+		if($(document).scrollTop()>300){
+			$("#s2tbox").css("display","block");
+		}else{
+			$("#s2tbox").css("display","none");
+		}
+	});
+	$("#s2tbox").click( function(){ $("html,body").animate({scrollTop:0},300); } );
+  });
+  </script>
+</body>
+
+</html>

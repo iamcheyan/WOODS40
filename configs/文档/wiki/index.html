@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WOODSKB客制化键盘</title>
+
+  <!--
+  <link href="/css/main.css" rel="stylesheet">-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#lefttoc" data-offset="120">
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="https://woodskb.com/"><img src="../img/woodskbkb-pure.svg" style="height:20px;"/></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">使用帮助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/fw/">固件下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/config/">键盘配置</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Page Content -->
+  <div class="container mt-4" id="content">
+    <div class="row">
+    
+      <div class="col-lg-3 mb-4 sidenav">
+
+      <div class="wy-menu shadow" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="list-group" id="lefttoc">
+			
+			
+				
+    <a class="list-group-item font-weight-bold active" href="index.html" data-target="#content">目录</a>
+    <!--ul class="subnav"<nav class="list-group">-->
+			
+    <!--</nav>/ul-->
+			
+				
+    <a class="list-group-item" href="assmb.html">组装</a>
+			
+				
+    <a class="list-group-item" href="keymap.html">键位设置</a>
+			
+				
+    <a class="list-group-item" href="bt.html">蓝牙</a>
+			
+				
+    <a class="list-group-item" href="power.html">电源及休眠</a>
+			
+				
+    <a class="list-group-item" href="macro.html">配置宏</a>
+			
+				
+    <a class="list-group-item" href="fw.html">固件升级</a>
+			
+				
+    <a class="list-group-item" href="faq.html">常见问题</a>
+			
+        </div>
+      </div>
+      &nbsp;
+      </div>
+
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4 content">
+    <p><span style="font-size:2rem;">目录</span></p>
+<p>感谢您选择WOODSKB系列键盘。希望您能认真阅读使用帮助，了解使用方法。</p>
+<ul>
+<li><a href="assmb.html">组装</a></li>
+<li><a href="keymap.html">设置键位</a></li>
+<li><a href="bt.html">蓝牙</a></li>
+<li><a href="power.html">电源及休眠</a></li>
+<li><a href="macro.html">配置宏</a></li>
+<li><a href="fw.html">固件升级</a></li>
+<li><a href="faq.html">常见问题</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+      </div>
+      <a href="javascript:;" id="s2tbox" onclick="return false;" > </a>
+    </div>
+  
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark mt-4">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; woodskb.com 2020　京ICP备20021896号</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(function(){ 
+  $(".content table").addClass("table table-striped");
+  $("tr td:first-child").addClass("text-nowrap");  
+	if( $("s2tbox").length == 0) {
+		//$(document.body).append('<a href="javascript:;" id="s2tbox" onclick="return false;" > </a>');
+	}
+	$(document).scroll(function(){
+		if($(document).scrollTop()>300){
+			$("#s2tbox").css("display","block");
+		}else{
+			$("#s2tbox").css("display","none");
+		}
+	});
+	$("#s2tbox").click( function(){ $("html,body").animate({scrollTop:0},300); } );
+  });
+  </script>
+</body>
+
+</html>

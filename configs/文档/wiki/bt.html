@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WOODSKB客制化键盘</title>
+
+  <!--
+  <link href="/css/main.css" rel="stylesheet">-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#lefttoc" data-offset="120">
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="https://woodskb.com/"><img src="../img/woodskbkb-pure.svg" style="height:20px;"/></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">使用帮助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/fw/">固件下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/config/">键盘配置</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Page Content -->
+  <div class="container mt-4" id="content">
+    <div class="row">
+    
+      <div class="col-lg-3 mb-4 sidenav">
+
+      <div class="wy-menu shadow" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="list-group" id="lefttoc">
+			
+			
+				
+    <a class="list-group-item" href="index.html">目录</a>
+			
+				
+    <a class="list-group-item" href="assmb.html">组装</a>
+			
+				
+    <a class="list-group-item" href="keymap.html">键位设置</a>
+			
+				
+    <a class="list-group-item font-weight-bold active" href="bt.html" data-target="#content">蓝牙</a>
+    <!--ul class="subnav"<nav class="list-group">-->
+			
+				<a class="list-group-item list-group-item-action pl-4" href="bt.html#1">1. 设置键</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="bt.html#2">2. 配对和切换</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="bt.html#3">3. 删除配对设备</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="bt.html#4">4. 其他功能</a>
+				
+			
+    <!--</nav>/ul-->
+			
+				
+    <a class="list-group-item" href="power.html">电源及休眠</a>
+			
+				
+    <a class="list-group-item" href="macro.html">配置宏</a>
+			
+				
+    <a class="list-group-item" href="fw.html">固件升级</a>
+			
+				
+    <a class="list-group-item" href="faq.html">常见问题</a>
+			
+        </div>
+      </div>
+      &nbsp;
+      </div>
+
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4 content">
+    <p><span style="font-size:2rem;">蓝牙</span></p>
+<p>WOODSKB系列双模键盘支持蓝牙5.0，可以配对5个设备。设备配对/切换键可以自定义，可以为5个设备分别设定对应的按键。</p>
+<h2 id="1">1. 设置键</h2>
+<p>在<a href="keymap.html">键位设置</a>一节中，介绍了设置键位的基本方法。在键位设置界面中，蓝牙相关的键在“键盘设置”页中。如下图：</p>
+<p><a href="img/btkeymap.png" target="_wikiimg"><img src="img/btkeymap.png" alt="WOODS40蓝牙相关的键" style="max-width:700px;" /></a></p>
+<p>蓝牙相关键的功能是：</p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>设备1-5</td>
+<td>配对/连接设备</td>
+</tr>
+<tr>
+<td>删除设备1-5</td>
+<td>删除所保存的某个配对设备信息</td>
+</tr>
+<tr>
+<td>删除所有设备</td>
+<td>删除所保存的所有配对设备信息</td>
+</tr>
+<tr>
+<td>断开连接</td>
+<td>关闭蓝牙广播，断开设备连接</td>
+</tr>
+<tr>
+<td>蓝牙信息</td>
+<td>以自动打字的方式输出当前蓝牙连接状态</td>
+</tr>
+<tr>
+<td>停用蓝牙</td>
+<td>停用蓝牙（只是不向蓝牙连接的主机发送按键，而不是关闭蓝牙连接）</td>
+</tr>
+<tr>
+<td>启用蓝牙</td>
+<td>启用蓝牙（与前述停用蓝牙相对）</td>
+</tr>
+<tr>
+<td>切换蓝牙</td>
+<td>切换蓝牙启用/停用状态</td>
+</tr>
+</tbody>
+</table>
+<p>配置工具的默认键位配置中，</p>
+<ul>
+<li>WOODS40蓝牙相关的键设置在第5层：</li>
+</ul>
+<p><img src="img/btkeyat5.png" alt="WOODS40蓝牙相关的键" style="max-width:582px;" /></p>
+<p>默认的切换到第5层的按键在第0层右下位置：</p>
+<p><img src="img/keymap0.png" alt="WOODS40蓝牙相关的键" style="max-width:586px;" /></p>
+<p>所以在默认情况下，按下<code>MO(5)+Q</code>，就是配对设备1。</p>
+<ul>
+<li>WOODS60蓝牙相关的键设置在第2层，默认的切换到第2层的键是按住Capslock键。所以在默认情况下，按下<code>Capslock+1</code>，就是配对设备1。</li>
+</ul>
+<p><img src="img/60btkeyat2.png" alt="WOODS60蓝牙相关的键" style="max-width:582px;" /></p>
+<p>&nbsp;</p>
+<p>您也可以重新定义按键位置。</p>
+<h2 id="2">2. 配对和切换</h2>
+<p>设置好配对按键后，想配对（连接）哪个设备，就按哪个键。</p>
+<p>第一次配对设备时，在要连接的设备上搜索蓝牙设备，会发现一个名为“WOODS40_BLE”或“WOODS60_BLE”的设备，连接它即可。</p>
+<p>指示灯1——5（对于WOODS40是QWERT下面的灯，对于WOODS60是数字1——5下面的灯）会指示配对状态：</p>
+<ul>
+<li>按下配对设备键后，对应的指示灯亮起。比如WOODS40上，按下“设备1”键，Q键下的灯亮起。</li>
+<li>连接上设备后灯熄灭。或者超时没有连接成功，灯也会熄灭。</li>
+</ul>
+<h2 id="3">3. 删除配对设备</h2>
+<p>设置好删除设备按键后，想删除哪个设备，就按哪个键。</p>
+<ul>
+<li>如果正连接着这个设备，将会断开连接。</li>
+<li>如果删除的是已保存的设备，对应的指示灯会亮一下；如果要删除的这个设备不存在，则灯不会亮起。（WOODS60指示灯没有这个功能）</li>
+<li>如果删除所有设备，则0——6号指示灯全部亮起。（WOODS60指示灯没有这个功能）</li>
+</ul>
+<h2 id="4">4. 其他功能</h2>
+<h4>1. 自动连接</h4>
+<ul>
+<li>键盘开机/重启/从休眠中唤醒时，如果没有插USB数据线，将自动尝试连接关机前/重启前/休眠前成功连接着的设备。</li>
+<li>如果删除所有配对设备，或者按了“断开连接”键，即在没有连接着设备的情况下，再关机/重启/休眠，则键盘启动时不会自动连接设备。</li>
+</ul>
+<h4>2. 输出蓝牙信息</h4>
+<p>可以分配一个“蓝牙信息”按键。按下时会以自动打字的方式输出当前蓝牙连接状态。</p>
+<table>
+<thead>
+<tr>
+<th>输出</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>noconn</td>
+<td>当前没有连接设备。当然，是在连接着数据线时才可以输出。</td>
+</tr>
+<tr>
+<td>dev1 —— dev5</td>
+<td>当前连接着的设备的设备号</td>
+</tr>
+<tr>
+<td>(dev1) —— (dev5)</td>
+<td>当前连接着的设备的设备号，但是处于停用状态，即按了“停用蓝牙”键。是在连接着数据线时才可以输出。</td>
+</tr>
+</tbody>
+</table>
+<h4>3. 停用/启用/切换蓝牙</h4>
+<p>蓝牙相关的键里有三个键：停用蓝牙、启用蓝牙、切换蓝牙。停用蓝牙可以在蓝牙连接上设备的情况下，停止向连接着的设备发送按键数据。</p>
+<p>同理，还有一套停用/启用/切换USB的键，与此功能类似，只是控制的是USB的数据输出。</p>
+<p>它们的一种应用场景是：有线和蓝牙同时连着同一个电脑，此时可以停用蓝牙，只用有线，否则蓝牙和有线都会传一遍按键数据。</p>
+<p>或者是：在同时有线连一台电脑，蓝牙连另一台，就需要用到切换蓝牙、切换USB，来控制在两台机器上的输入。否则按下一个键将同时传输给两台电脑。</p>
+<p>要注意的是，这个停用状态并不持久化保存，键盘开机/重启/从休眠中唤醒时，就恢复到启用的状态。</p>
+<p>&nbsp;</p>
+      </div>
+      <a href="javascript:;" id="s2tbox" onclick="return false;" > </a>
+    </div>
+  
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark mt-4">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; woodskb.com 2020　京ICP备20021896号</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(function(){ 
+  $(".content table").addClass("table table-striped");
+  $("tr td:first-child").addClass("text-nowrap");  
+	if( $("s2tbox").length == 0) {
+		//$(document.body).append('<a href="javascript:;" id="s2tbox" onclick="return false;" > </a>');
+	}
+	$(document).scroll(function(){
+		if($(document).scrollTop()>300){
+			$("#s2tbox").css("display","block");
+		}else{
+			$("#s2tbox").css("display","none");
+		}
+	});
+	$("#s2tbox").click( function(){ $("html,body").animate({scrollTop:0},300); } );
+  });
+  </script>
+</body>
+
+</html>

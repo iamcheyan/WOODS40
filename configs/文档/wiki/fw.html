@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WOODSKB客制化键盘</title>
+
+  <!--
+  <link href="/css/main.css" rel="stylesheet">-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#lefttoc" data-offset="120">
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="https://woodskb.com/"><img src="../img/woodskbkb-pure.svg" style="height:20px;"/></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">使用帮助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/fw/">固件下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/config/">键盘配置</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Page Content -->
+  <div class="container mt-4" id="content">
+    <div class="row">
+    
+      <div class="col-lg-3 mb-4 sidenav">
+
+      <div class="wy-menu shadow" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="list-group" id="lefttoc">
+			
+			
+				
+    <a class="list-group-item" href="index.html">目录</a>
+			
+				
+    <a class="list-group-item" href="assmb.html">组装</a>
+			
+				
+    <a class="list-group-item" href="keymap.html">键位设置</a>
+			
+				
+    <a class="list-group-item" href="bt.html">蓝牙</a>
+			
+				
+    <a class="list-group-item" href="power.html">电源及休眠</a>
+			
+				
+    <a class="list-group-item" href="macro.html">配置宏</a>
+			
+				
+    <a class="list-group-item font-weight-bold active" href="fw.html" data-target="#content">固件升级</a>
+    <!--ul class="subnav"<nav class="list-group">-->
+			
+				<a class="list-group-item list-group-item-action pl-4" href="fw.html#1_dfu">1. 进DFU</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="fw.html#2">2. 下载固件文件</a>
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="fw.html#3">3. 更新固件</a>
+				
+			
+    <!--</nav>/ul-->
+			
+				
+    <a class="list-group-item" href="faq.html">常见问题</a>
+			
+        </div>
+      </div>
+      &nbsp;
+      </div>
+
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4 content">
+    <p><span style="font-size:2rem;">升级固件</span></p>
+<p>WOODSKB系列键盘升级固件无需安装任何软件，采用的是网站+仿真U盘方式。基本步骤是：</p>
+<ol>
+<li>进入DFU，键盘将被识别为U盘</li>
+<li>下载固件文件</li>
+<li>将固件文件拷入</li>
+</ol>
+<h2 id="1_dfu">1. 进DFU</h2>
+<p>在<a href="keymap.html#1_dfu">键位设置</a>一节中，已经介绍了进DFU的方法，请您参考。</p>
+<h2 id="2">2. 下载固件文件</h2>
+<p>WOODSKB系列键盘可以自动判断是否需要升级固件，也可以自行手动下载所需的固件文件。</p>
+<ul>
+<li>自动判断<ol>
+<li>进DFU键盘被识别为U盘后，打开这个U盘，可以看到有一个<code>CONFIG.HTM</code>文件，双击这个文件，就可以访问配置网站，并<strong>自动提交</strong>键盘的当前固件版本信息及键位配置。</li>
+<li>如果需要更新固件，在界面上会出现一个红色的“新版固件”按钮，点击它即可下载最新版本固件。如果键盘固件已经是最新版本，则不会出现这个按钮。</li>
+</ol>
+</li>
+</ul>
+<p><a href="img/newfw.png.html" target="_wikiimg"><img src="img/newfw.png.html" alt="新版固件提示" style="max-width:650px;" /></a></p>
+<ul>
+<li>手动下载<ol>
+<li>进DFU键盘被识别为U盘后，打开这个U盘，可以看到有一个<code>INFO.TXT</code>文件。这个文件中的<code>Model</code>是键盘系列型号，<code>Firmware Version</code>是固件版本。其中<code>Firmware Version</code>由字母前缀和版本号数字组成，字母前缀代表了配列和子型号信息。</li>
+<li>访问网站的<a href="https://woodskb.com/fw/">固件下载</a>栏目，根据键盘型号和版本前缀选择合适的固件文件下载。</li>
+</ol>
+</li>
+</ul>
+<h2 id="3">3. 更新固件</h2>
+<p>将下载好的固件文件拷入DFU模式U盘。键盘将自动重启，升级就算完成了。</p>
+      </div>
+      <a href="javascript:;" id="s2tbox" onclick="return false;" > </a>
+    </div>
+  
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark mt-4">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; woodskb.com 2020　京ICP备20021896号</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(function(){ 
+  $(".content table").addClass("table table-striped");
+  $("tr td:first-child").addClass("text-nowrap");  
+	if( $("s2tbox").length == 0) {
+		//$(document.body).append('<a href="javascript:;" id="s2tbox" onclick="return false;" > </a>');
+	}
+	$(document).scroll(function(){
+		if($(document).scrollTop()>300){
+			$("#s2tbox").css("display","block");
+		}else{
+			$("#s2tbox").css("display","none");
+		}
+	});
+	$("#s2tbox").click( function(){ $("html,body").animate({scrollTop:0},300); } );
+  });
+  </script>
+</body>
+
+</html>

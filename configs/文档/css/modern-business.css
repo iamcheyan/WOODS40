@@ -1,0 +1,113 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+@media (max-width: 960px) {
+  .carousel-item {
+    background-size: auto 100%;
+  }
+}
+.nav-link {font-size: 1rem;line-height: 1.5;}
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/*
+.content td:first-child {
+  white-space: nowrap;
+}  */
+
+.content img {
+  display:block;margin:auto;width:100%;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.content h2 { margin-top: 2.5rem;}
+.content h3 { margin-top: 2rem;}
+
+#s2tbox{position:absolute; bottom:-100px;}
+
+#s2tbox{
+  position: fixed;
+  margin-left: 1170px;
+  bottom:10px;
+  height: 38px;
+  width: 38px;
+  z-index: 99;
+  background: rgba(0,0,0,0.3);
+  border-radius: 1px;
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+  display:none;
+}
+#s2tbox:before{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: inline-block;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #fff;
+  border-top: 0;
+  -webkit-transform: scale(1,1.2222);
+  -webkit-transform: translate(0,1px);
+  transform: scale(1,1.2222);
+  transform: translate(0,1px);
+}
+#s2tbox:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 18px;
+  height: 3px;
+  border-radius: 1px;
+  background: #fff;
+  border-radius: 1px;
+}
+
+  
+/*
+.wy-menu { box-shadow: 3px 3px 8px rgba(0, 0, 0, .3);  } */
+@media screen and  (max-width: 992px) {
+  .wy-menu { 
+    position: static;
+    width: 100%;
+  }
+  #s2tbox{
+    margin-left: auto;
+    right: 20px;
+  }
+}
+@media screen and  (min-width: 992px) {
+  .wy-menu { 
+    position: fixed;
+    width: 210px;
+  }
+  #s2tbox{
+    margin-left: 890px;
+  }
+}
+
+@media screen and  (min-width: 1200px) {
+  .wy-menu { 
+    position: fixed;
+    width: 255px;
+  }
+  #s2tbox{
+    margin-left: 1070px;
+  }
+}

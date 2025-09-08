@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WOODSKB客制化键盘</title>
+
+  <!--
+  <link href="/css/main.css" rel="stylesheet">-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#lefttoc" data-offset="120">
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" id="top">
+    <div class="container">
+      <a class="navbar-brand" href="https://woodskb.com/"><img src="../img/woodskbkb-pure.svg" style="height:20px;"/></a>
+      <button class="navbar-toggler navbar-toggler-right bg-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">使用帮助</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/fw/">固件下载</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://woodskb.com/config/">键盘配置</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Page Content -->
+  <div class="container mt-4" id="content">
+    <div class="row">
+    
+      <div class="col-lg-3 mb-4 sidenav">
+
+      <div class="wy-menu shadow" data-spy="affix" role="navigation" aria-label="main navigation">
+        <div class="list-group" id="lefttoc">
+			
+			
+				
+    <a class="list-group-item" href="index.html">目录</a>
+			
+				
+    <a class="list-group-item" href="assmb.html">组装</a>
+			
+				
+    <a class="list-group-item" href="keymap.html">键位设置</a>
+			
+				
+    <a class="list-group-item" href="bt.html">蓝牙</a>
+			
+				
+    <a class="list-group-item" href="power.html">电源及休眠</a>
+			
+				
+    <a class="list-group-item font-weight-bold active" href="macro.html" data-target="#content">配置宏</a>
+    <!--ul class="subnav"<nav class="list-group">-->
+			
+				<a class="list-group-item list-group-item-action pl-4" href="macro.html#1">1. 设置宏内容</a>
+				
+					
+						<a class="list-group-item list-group-item-action pl-5" href="macro.html#11">1.1. 添加、删除宏</a>
+					
+						<a class="list-group-item list-group-item-action pl-5" href="macro.html#12">1.2. 添加“宏步骤”</a>
+					
+						<a class="list-group-item list-group-item-action pl-5" href="macro.html#13">1.3. 设置“宏步骤”</a>
+					
+				
+			
+				<a class="list-group-item list-group-item-action pl-4" href="macro.html#2">2. 分配宏按键</a>
+				
+			
+    <!--</nav>/ul-->
+			
+				
+    <a class="list-group-item" href="fw.html">固件升级</a>
+			
+				
+    <a class="list-group-item" href="faq.html">常见问题</a>
+			
+        </div>
+      </div>
+      &nbsp;
+      </div>
+
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4 content">
+    <p><span style="font-size:2rem;">配置宏</span></p>
+<p>利用宏功能可以自动连续的模拟按下键盘上的键。在此略作说明WOODSKB系列键盘配置宏的操作方法。</p>
+<p>配置宏分两大步骤：</p>
+<ul>
+<li>设置宏内容</li>
+<li>分配宏按键</li>
+</ul>
+<h2 id="1">1. 设置宏内容</h2>
+<p>设置宏内容的基本步骤是</p>
+<ul>
+<li>添加宏</li>
+<li>添加宏步骤</li>
+<li>设置宏步骤</li>
+</ul>
+<h3 id="11">1.1. 添加、删除宏</h3>
+<p>在“宏设置”页上点击“添加一个新宏”键，界面上出现一个新宏的设置区，最左边会显示这个<strong>宏的编号</strong>。最多可以添加32个宏，编号范围是0——31。</p>
+<p>点击宏设置区中右侧的“删除”键可以删除这个宏。</p>
+<h3 id="12">1.2. 添加“宏步骤”</h3>
+<p>一个宏由一系列“宏步骤”组成。在宏设置区，由一个个的按键形状表示宏步骤的操作内容。</p>
+<p>宏步骤有多种类型，表示所模拟按键操作的类型。包括：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>点按</td>
+<td>按一个键。即按下一个键，然后立即抬起</td>
+</tr>
+<tr>
+<td>按下</td>
+<td>按下一个键，不抬起</td>
+</tr>
+<tr>
+<td>抬起</td>
+<td>抬起按键</td>
+</tr>
+<tr>
+<td>延迟</td>
+<td>延迟一段时间，单位是毫秒。</td>
+</tr>
+<tr>
+<td>字串</td>
+<td>输入一段文字或符号。因为宏只是模拟键盘按键按下，所以这里的字串不能是中文，只能是半角字母或符号。</td>
+</tr>
+</tbody>
+</table>
+<p>从下拉框中选择步骤的类型，点击“添加”按钮，会创建一个“宏步骤”键，显示在左侧的列表中。</p>
+<h3 id="13">1.3. 设置“宏步骤”</h3>
+<h4>1.3.1. 设置“宏步骤”内容</h4>
+<p>设置宏步骤的内容，先用鼠标点中步骤键<strong>中间的方框</strong>，方框边缘会高亮显示，然后：</p>
+<ul>
+<li>对于“点按”、“按下”、“抬起”类型的宏步骤，有两种方式可以设置所要按的键：<ul>
+<li>直接按键盘上的键</li>
+<li>点击界面下方的虚拟键盘上的键</li>
+</ul>
+</li>
+<li>对于“延迟”类型的宏步骤，直接在方框中输入延迟的毫秒数。</li>
+<li>对于“字串”类型的宏步骤，直接在方框中输入字串。</li>
+</ul>
+<h4>1.3.2. 排序“宏步骤”</h4>
+<p>用鼠标按住宏步骤键，往其它宏步骤键上拖，可以移动宏步骤键到新的位置。</p>
+<h4>1.3.3. 删除“宏步骤”</h4>
+<p>鼠标移动到宏步骤键上，右上角会出现一个小的“x”，点击就可以删除这个宏步骤键。</p>
+<h2 id="2">2. 分配宏按键</h2>
+<p>在键位设置界面中，执行宏的键在“扩展”页中最下方。</p>
+<ol>
+<li>为键盘的某个键分配宏按键</li>
+<li>在宏按键中间的框中输入宏的编号。宏的编号在前面的<a href="macro.html#11">1.1. 添加宏</a>中可以看到。</li>
+</ol>
+<p>好了，现在宏已经设置好了。按“键位设置”章节中的<a href="keymap.html#3">更新键盘配置文件</a>的指导更新好键盘的配置，就可以使用宏了。</p>
+      </div>
+      <a href="javascript:;" id="s2tbox" onclick="return false;" > </a>
+    </div>
+  
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark mt-4">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; woodskb.com 2020　京ICP备20021896号</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(function(){ 
+  $(".content table").addClass("table table-striped");
+  $("tr td:first-child").addClass("text-nowrap");  
+	if( $("s2tbox").length == 0) {
+		//$(document.body).append('<a href="javascript:;" id="s2tbox" onclick="return false;" > </a>');
+	}
+	$(document).scroll(function(){
+		if($(document).scrollTop()>300){
+			$("#s2tbox").css("display","block");
+		}else{
+			$("#s2tbox").css("display","none");
+		}
+	});
+	$("#s2tbox").click( function(){ $("html,body").animate({scrollTop:0},300); } );
+  });
+  </script>
+</body>
+
+</html>
